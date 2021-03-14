@@ -4,6 +4,7 @@ import AppNavbar from './AppNavbar';
 import { Link } from 'react-router-dom';
 import { Button, Container } from 'reactstrap';
 import { withCookies } from 'react-cookie';
+import { ORIGIN_URI_KEY } from './Constants';
 
 /**
  * There are some things you should be aware of in this component:
@@ -33,14 +34,22 @@ class Home extends Component {
     this.state.csrfToken = cookies.get('XSRF-TOKEN');
     this.login = this.login.bind(this);
     this.logout = this.logout.bind(this);
+    const originUriValue = localStorage.getItem(ORIGIN_URI_KEY);
+    localStorage.removeItem(ORIGIN_URI_KEY);
+    console.log('value read from storage: ', originUriValue);
+    if ( originUriValue ) { 
+      this.props.history.push(originUriValue); 
+    }
   }
 
   async componentDidMount() {
     const response = await fetch('/api/user', { credentials: 'include' });
     const body = await response.text();
     if (body === '') {
-      this.setState(({ isAuthenticated: false }))
-    } else {this.setState({ isAuthenticated: true, user: JSON.parse(body) })}
+      this.setState(({ isAuthenticated: false }));
+    } else {
+      this.setState({ isAuthenticated: true, user: JSON.parse(body) });
+    }
   }
 
   login() {
