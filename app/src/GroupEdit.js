@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
+import { Cookies, withCookies } from 'react-cookie';
 import { Button, Container, Form, FormGroup, Input, Label } from 'reactstrap';
+import { instanceOf } from 'prop-types';
 import AppNavbar from './AppNavbar';
 
 class GroupEdit extends Component {
+  static propTypes = {
+    cookies: instanceOf(Cookies).isRequired
+  };
 
   emptyItem = {
     name: '',
@@ -16,8 +21,10 @@ class GroupEdit extends Component {
 
   constructor(props) {
     super(props);
+    const { cookies } = props;
     this.state = {
-      item: this.emptyItem
+      item: this.emptyItem,
+      csrfToken: cookies.get('XSRF-TOKEN')
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -25,8 +32,12 @@ class GroupEdit extends Component {
 
   async componentDidMount() {
     if (this.props.match.params.id !== 'new') {
-      const group = await (await fetch(`/api/group/${this.props.match.params.id}`)).json();
-      this.setState({item: group});
+      try {
+        const group = await (await fetch(`/api/group/${this.props.match.params.id}`, {credentials: 'include'})).json();
+        this.setState({item: group});
+      } catch (error) {
+        this.props.history.push('/');
+      }
     }
   }
 
@@ -36,20 +47,21 @@ class GroupEdit extends Component {
     const name = target.name;
     let item = {...this.state.item};
     item[name] = value;
-    this.setState({item});
+    this.setState({ item });
   }
 
   async handleSubmit(event) {
     event.preventDefault();
-    const {item} = this.state;
-
+    const { item, csrfToken } = this.state;
     await fetch('/api/group' + (item.id ? '/' + item.id : ''), {
       method: (item.id) ? 'PUT' : 'POST',
       headers: {
+        'X-XSRF-TOKEN': csrfToken,
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(item),
+      credentials: 'include',
     });
     this.props.history.push('/groups');
   }
@@ -105,4 +117,4 @@ class GroupEdit extends Component {
   }
 }
 
-export default withRouter(GroupEdit);
+export default withCookies(withRouter(GroupEdit));
