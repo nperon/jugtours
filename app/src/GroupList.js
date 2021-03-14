@@ -46,12 +46,9 @@ class GroupList extends Component {
 
   render() {
     const { groups, isLoading } = this.state;
-    console.log('groups: ', groups);
-
-    if (isLoading) {
+    if ( isLoading ) {
       return <p>Loading...</p>;
     }
-
     const groupList = groups.map(group => {
       const address = `${group.address || ''} ${group.city || ''} ${group.stateOrProvince || ''}`;
       return <tr key={group.id}>

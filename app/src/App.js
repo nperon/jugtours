@@ -12,9 +12,9 @@ class App extends Component {
       <CookiesProvider>
         <Router>
           <Switch>
-            <Route path='/' exact={true} component={Home}/>
-            <Route path='/groups' exact={true} component={GroupList}/>
-            <Route path='/groups/:id' component={GroupEdit}/>
+            <Route path='/' exact={true} component={(props) => <Home {...props} />} />
+            <Route path='/groups' exact={true} component={(props) => <GroupList {...props} />} />
+            <Route path='/groups/:id' component={(props) => <GroupEdit {...props} />} />
           </Switch>
         </Router>
       </CookiesProvider>
