@@ -4,9 +4,9 @@ spring:
       client:
         registration:
           okta:
-            client-id: 0oa2k3lyjrweapc7e4x7
-            client-secret: w9dy84N39F6vX1y5JptBwRyxw8Jye5en5wWs1udj
+            client-id: react-spring-boot-app
+            client-secret: e4127337-68bb-46c0-ba03-a79e5ed79c28
             scope: openid, email, profile
         provider:
           okta:
-            issuer-uri: https://dev-988006.okta.com/oauth2/default
+            issuer-uri: http://localhost:9080/auth/realms/tutorealm

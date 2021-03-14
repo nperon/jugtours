@@ -1,0 +1,516 @@
+{
+  "realm": "tutorealm",
+  "users": [
+    {
+      "id": "6f7c933c-eb24-4758-bf71-6a17695b585b",
+      "createdTimestamp": 1615311955711,
+      "username": "service-account-internal",
+      "enabled": true,
+      "totp": false,
+      "emailVerified": false,
+      "serviceAccountClientId": "internal",
+      "credentials": [],
+      "disableableCredentialTypes": [],
+      "requiredActions": [],
+      "realmRoles": [
+        "offline_access",
+        "uma_authorization",
+        "admin",
+        "all_access"
+      ],
+      "clientRoles": {
+        "internal": [
+          "uma_protection"
+        ],
+        "account": [
+          "view-profile",
+          "manage-account"
+        ]
+      },
+      "notBefore": 0,
+      "groups": []
+    },
+    {
+      "id": "51720a18-d313-45a3-9e63-de4cf6579a2a",
+      "createdTimestamp": 1615311955711,
+      "username": "admin",
+      "enabled": true,
+      "totp": false,
+      "emailVerified": true,
+      "firstName": "OKP4",
+      "lastName": "Admin",
+      "email": "okp4@localhost",
+      "credentials": [
+        {
+          "id": "a65f6d78-6db1-4b5b-a054-dc70ddbdb102",
+          "type": "password",
+          "createdDate": 1615311955711,
+          "secretData": "{\"value\":\"ecett1nkdYKYX4rPSmCBxQER47n+pnq/vJisoLcszqQ5kn0hvx3BfONZnI/A4TjD40xsT9GY6B2i2rfv+QGVFg==\",\"salt\":\"1/qNkZ5kr77jOMOBPBogGw==\"}",
+          "credentialData": "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\"}"
+        }
+      ],
+      "disableableCredentialTypes": [],
+      "requiredActions": [],
+      "realmRoles": [
+        "offline_access",
+        "uma_authorization",
+        "ROLE_ADMIN",
+        "ROLE_USER",
+        "kibanauser",
+        "admin",
+        "all_access",
+        "ROLE_RM_agrial",
+        "ROLE_RM_juram",
+        "ROLE_RM_ocealia",
+        "ROLE_RM_a_tenant_communes",
+        "ROLE_RM_b_tenant_rpg_rotation"
+      ],
+      "notBefore": 0,
+      "groups": []
+    },
+    {
+      "id": "cf7dc681-74a2-467d-83ff-5f3dc10f2e3d",
+      "createdTimestamp": 1615311955711,
+      "username": "report_manager",
+      "enabled": true,
+      "totp": false,
+      "emailVerified": true,
+      "firstName": "Michel",
+      "lastName": "Dupond",
+      "email": "report_manager@o",
+      "credentials": [
+        {
+          "id": "dd2fc93f-842d-44ad-b017-e0fc6e333f23",
+          "type": "password",
+          "createdDate": 1615311955711,
+          "secretData": "{\"value\":\"ecett1nkdYKYX4rPSmCBxQER47n+pnq/vJisoLcszqQ5kn0hvx3BfONZnI/A4TjD40xsT9GY6B2i2rfv+QGVFg==\",\"salt\":\"1/qNkZ5kr77jOMOBPBogGw==\"}",
+          "credentialData": "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\"}"
+        }
+      ],
+      "disableableCredentialTypes": [],
+      "requiredActions": [],
+      "realmRoles": [
+        "offline_access",
+        "uma_authorization",
+        "ROLE_ADMIN",
+        "ROLE_USER",
+        "kibanauser",
+        "ROLE_RM_agrial",
+        "ROLE_RM_juram",
+        "ROLE_RM_ocealia",
+        "ROLE_RM_a_tenant_communes",
+        "ROLE_RM_b_tenant_rpg_rotation"
+      ],
+      "notBefore": 0,
+      "groups": []
+    },
+    {
+      "id": "ad6505be-b851-402f-9d4a-34e24e361a51",
+      "createdTimestamp": 1615311955711,
+      "username": "agrial_user",
+      "enabled": true,
+      "totp": false,
+      "emailVerified": true,
+      "firstName": "agrial_user",
+      "lastName": "agrial_user",
+      "email": "agrial_user@o",
+      "credentials": [
+        {
+          "id": "c9daf9b9-5a7c-4852-a1c5-c2aa2b5b141d",
+          "type": "password",
+          "createdDate": 1615311955711,
+          "secretData": "{\"value\":\"nnA4/OKo0kStnlv6t+8Lo3Ee6WhtzWsTdwv+ONM7qmplWJ1kSgp18f1gbvWVl2PKE+AtB+QSVt4YQomX4HYT1g==\",\"salt\":\"fmpBI1r8R1u75hDLMUlwBw==\"}",
+          "credentialData": "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\"}"
+        }
+      ],
+      "disableableCredentialTypes": [],
+      "requiredActions": [],
+      "realmRoles": [
+        "offline_access",
+        "uma_authorization",
+        "ROLE_USER",
+        "kibana_read_only",
+        "kibana_okp4_user",
+        "kibanauser",
+        "ROLE_UC_agrial"
+      ],
+      "notBefore": 0,
+      "groups": []
+    },
+    {
+      "id": "0c5fdd13-4187-4021-b6d5-ede7a8af4513",
+      "createdTimestamp": 1615311955711,
+      "username": "juram_user",
+      "enabled": true,
+      "totp": false,
+      "emailVerified": true,
+      "firstName": "juram_user",
+      "lastName": "juram_user",
+      "email": "juram_user@o",
+      "credentials": [
+        {
+          "id": "becdd4a4-3d7f-4611-b5f0-553d062f4196",
+          "type": "password",
+          "createdDate": 1615311955711,
+          "secretData": "{\"value\":\"nnA4/OKo0kStnlv6t+8Lo3Ee6WhtzWsTdwv+ONM7qmplWJ1kSgp18f1gbvWVl2PKE+AtB+QSVt4YQomX4HYT1g==\",\"salt\":\"fmpBI1r8R1u75hDLMUlwBw==\"}",
+          "credentialData": "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\"}"
+        }
+      ],
+      "disableableCredentialTypes": [],
+      "requiredActions": [],
+      "realmRoles": [
+        "offline_access",
+        "uma_authorization",
+        "ROLE_USER",
+        "kibana_read_only",
+        "kibana_okp4_user",
+        "kibanauser",
+        "ROLE_UC_juram"
+      ],
+      "notBefore": 0,
+      "groups": []
+    },
+    {
+      "id": "22ba3146-283f-4259-b833-4e6454172609",
+      "createdTimestamp": 1615311955711,
+      "username": "user_ocealia",
+      "enabled": true,
+      "totp": false,
+      "emailVerified": true,
+      "firstName": "user_ocealia",
+      "lastName": "user_ocealia",
+      "email": "user_ocealia@o",
+      "credentials": [
+        {
+          "id": "60fcfb4b-e6d0-4e13-bf92-21061c6d4ddf",
+          "type": "password",
+          "createdDate": 1615311955711,
+          "secretData": "{\"value\":\"nnA4/OKo0kStnlv6t+8Lo3Ee6WhtzWsTdwv+ONM7qmplWJ1kSgp18f1gbvWVl2PKE+AtB+QSVt4YQomX4HYT1g==\",\"salt\":\"fmpBI1r8R1u75hDLMUlwBw==\"}",
+          "credentialData": "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\"}"
+        }
+      ],
+      "disableableCredentialTypes": [],
+      "requiredActions": [],
+      "realmRoles": [
+        "offline_access",
+        "uma_authorization",
+        "ROLE_USER",
+        "kibana_read_only",
+        "kibana_okp4_user",
+        "kibanauser",
+        "ROLE_UC_ocealia"
+      ],
+      "notBefore": 0,
+      "groups": []
+    },
+    {
+      "id": "517074c9-27d1-4f09-b0d5-981db12fcbbf",
+      "createdTimestamp": 1615311955711,
+      "username": "dhowison",
+      "enabled": true,
+      "totp": false,
+      "emailVerified": true,
+      "firstName": "Derrick",
+      "lastName": "Howison",
+      "email": "dhowison5@gmpg.org",
+      "credentials": [
+        {
+          "id": "92d297ed-326d-4bae-9a5a-e8e671f186c7",
+          "type": "password",
+          "createdDate": 1615311955711,
+          "secretData": "{\"value\":\"nnA4/OKo0kStnlv6t+8Lo3Ee6WhtzWsTdwv+ONM7qmplWJ1kSgp18f1gbvWVl2PKE+AtB+QSVt4YQomX4HYT1g==\",\"salt\":\"fmpBI1r8R1u75hDLMUlwBw==\"}",
+          "credentialData": "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\"}"
+        }
+      ],
+      "disableableCredentialTypes": [],
+      "requiredActions": [],
+      "realmRoles": [
+        "offline_access",
+        "uma_authorization",
+        "ROLE_USER",
+        "ROLE_COOP_ADMIN",
+        "kibana_read_only",
+        "kibana_okp4_user",
+        "kibanauser",
+        "ROLE_UC_a_tenant_communes"
+      ],
+      "notBefore": 0,
+      "groups": []
+    },
+    {
+      "id": "73f68f48-5799-4c90-bc7b-dda4d9d34811",
+      "createdTimestamp": 1615311955711,
+      "username": "lunderwood",
+      "enabled": true,
+      "totp": false,
+      "emailVerified": true,
+      "firstName": "Larry",
+      "lastName": "Underwood",
+      "email": "lunderwood@freezone.org",
+      "credentials": [
+        {
+          "id": "0395387e-35ac-4e98-bc5a-41205e0ee867",
+          "type": "password",
+          "createdDate": 1615311955711,
+          "secretData": "{\"value\":\"nnA4/OKo0kStnlv6t+8Lo3Ee6WhtzWsTdwv+ONM7qmplWJ1kSgp18f1gbvWVl2PKE+AtB+QSVt4YQomX4HYT1g==\",\"salt\":\"fmpBI1r8R1u75hDLMUlwBw==\"}",
+          "credentialData": "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\"}"
+        }
+      ],
+      "disableableCredentialTypes": [],
+      "requiredActions": [],
+      "realmRoles": [
+        "offline_access",
+        "uma_authorization",
+        "ROLE_USER",
+        "ROLE_COOP_ADMIN",
+        "kibana_read_only",
+        "kibana_okp4_user",
+        "kibanauser",
+        "ROLE_UC_b_tenant_rpg_rotation"
+      ],
+      "notBefore": 0,
+      "groups": []
+    },
+    {
+      "id": "f157b9f9-c924-4e86-acca-41d5769df6ec",
+      "createdTimestamp": 1615311955711,
+      "username": "nandros",
+      "enabled": true,
+      "totp": false,
+      "emailVerified": true,
+      "firstName": "Nick",
+      "lastName": "Andros",
+      "email": "nandros@freezone.org",
+      "credentials": [
+        {
+          "id": "d947f0ec-76d1-4c46-873d-c1e29951da37",
+          "type": "password",
+          "createdDate": 1615311955711,
+          "secretData": "{\"value\":\"nnA4/OKo0kStnlv6t+8Lo3Ee6WhtzWsTdwv+ONM7qmplWJ1kSgp18f1gbvWVl2PKE+AtB+QSVt4YQomX4HYT1g==\",\"salt\":\"fmpBI1r8R1u75hDLMUlwBw==\"}",
+          "credentialData": "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\"}"
+        }
+      ],
+      "disableableCredentialTypes": [],
+      "requiredActions": [],
+      "realmRoles": [
+        "offline_access",
+        "uma_authorization",
+        "ROLE_USER",
+        "ROLE_REGION_DIRECTOR",
+        "kibana_read_only",
+        "kibana_okp4_user",
+        "kibanauser",
+        "ROLE_UC_a_tenant_communes"
+      ],
+      "notBefore": 0,
+      "groups": []
+    },
+    {
+      "id": "2f4d0276-7b75-4e7e-845a-10f2cf4817c4",
+      "createdTimestamp": 1615311955711,
+      "username": "gbateman",
+      "enabled": true,
+      "totp": false,
+      "emailVerified": true,
+      "firstName": "Glen",
+      "lastName": "Bateman",
+      "email": "gbateman@freezone.org",
+      "credentials": [
+        {
+          "id": "97ed3ffc-24de-481b-9682-b978215bd54b",
+          "type": "password",
+          "createdDate": 1615311955711,
+          "secretData": "{\"value\":\"nnA4/OKo0kStnlv6t+8Lo3Ee6WhtzWsTdwv+ONM7qmplWJ1kSgp18f1gbvWVl2PKE+AtB+QSVt4YQomX4HYT1g==\",\"salt\":\"fmpBI1r8R1u75hDLMUlwBw==\"}",
+          "credentialData": "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\"}"
+        }
+      ],
+      "disableableCredentialTypes": [],
+      "requiredActions": [],
+      "realmRoles": [
+        "offline_access",
+        "uma_authorization",
+        "ROLE_USER",
+        "ROLE_REGION_DIRECTOR",
+        "kibana_read_only",
+        "kibana_okp4_user",
+        "kibanauser",
+        "ROLE_UC_a_tenant_communes"
+      ],
+      "notBefore": 0,
+      "groups": []
+    },
+    {
+      "id": "4269d79f-8af7-4cfc-a0e6-3041d3e97788",
+      "createdTimestamp": 1615311955711,
+      "username": "user1",
+      "enabled": true,
+      "totp": false,
+      "emailVerified": true,
+      "firstName": "Bernard",
+      "lastName": "Durand",
+      "email": "bdurand@localhost",
+      "credentials": [
+        {
+          "id": "d4f562e5-293b-4f65-b5e8-fa10b2f64fb1",
+          "type": "password",
+          "createdDate": 1615311955711,
+          "secretData": "{\"value\":\"nnA4/OKo0kStnlv6t+8Lo3Ee6WhtzWsTdwv+ONM7qmplWJ1kSgp18f1gbvWVl2PKE+AtB+QSVt4YQomX4HYT1g==\",\"salt\":\"fmpBI1r8R1u75hDLMUlwBw==\"}",
+          "credentialData": "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\"}"
+        }
+      ],
+      "disableableCredentialTypes": [],
+      "requiredActions": [],
+      "realmRoles": [
+        "offline_access",
+        "uma_authorization",
+        "ROLE_USER",
+        "kibana_read_only",
+        "kibana_okp4_user",
+        "kibanauser",
+        "ROLE_UC_a_tenant_communes"
+      ],
+      "notBefore": 0,
+      "groups": [],
+      "attributes": {
+        "num_tiers": "100001",
+        "nom_tiers": "nta"
+      }
+    },
+    {
+      "id": "823cd00a-4df1-4d5b-a006-72e0c6003c19",
+      "createdTimestamp": 1615311955711,
+      "username": "user2",
+      "enabled": true,
+      "totp": false,
+      "emailVerified": true,
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "email": "janedoe@localhost",
+      "credentials": [
+        {
+          "id": "8b869b94-147d-4512-aa65-68ebc1f61031",
+          "type": "password",
+          "createdDate": 1615311955711,
+          "secretData": "{\"value\":\"nnA4/OKo0kStnlv6t+8Lo3Ee6WhtzWsTdwv+ONM7qmplWJ1kSgp18f1gbvWVl2PKE+AtB+QSVt4YQomX4HYT1g==\",\"salt\":\"fmpBI1r8R1u75hDLMUlwBw==\"}",
+          "credentialData": "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\"}"
+        }
+      ],
+      "disableableCredentialTypes": [],
+      "requiredActions": [],
+      "realmRoles": [
+        "offline_access",
+        "uma_authorization",
+        "ROLE_USER",
+        "kibana_read_only",
+        "kibana_okp4_user",
+        "kibanauser",
+        "ROLE_UC_a_tenant_communes"
+      ],
+      "notBefore": 0,
+      "groups": [],
+      "attributes": {
+        "num_tiers": "100002",
+        "nom_tiers": "Jane"
+      }
+    },
+    {
+      "id": "1f5efe1f-f3e4-41f3-95ae-6762559874b9",
+      "createdTimestamp": 1615311955711,
+      "username": "user3",
+      "enabled": true,
+      "totp": false,
+      "emailVerified": true,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@localhost",
+      "credentials": [
+        {
+          "id": "33d6ee8e-59d4-4991-a1df-6d852d56f5b2",
+          "type": "password",
+          "createdDate": 1615311955711,
+          "secretData": "{\"value\":\"nnA4/OKo0kStnlv6t+8Lo3Ee6WhtzWsTdwv+ONM7qmplWJ1kSgp18f1gbvWVl2PKE+AtB+QSVt4YQomX4HYT1g==\",\"salt\":\"fmpBI1r8R1u75hDLMUlwBw==\"}",
+          "credentialData": "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\"}"
+        }
+      ],
+      "disableableCredentialTypes": [],
+      "requiredActions": [],
+      "realmRoles": [
+        "offline_access",
+        "uma_authorization",
+        "ROLE_USER",
+        "kibana_read_only",
+        "kibana_okp4_user",
+        "kibanauser",
+        "ROLE_UC_a_tenant_communes"
+      ],
+      "notBefore": 0,
+      "groups": []
+    },
+    {
+      "id": "9cdbb3ef-426c-4f44-b998-3f48e683ddf3",
+      "createdTimestamp": 1615311955711,
+      "username": "user4",
+      "enabled": true,
+      "totp": false,
+      "emailVerified": true,
+      "firstName": "Stuart",
+      "lastName": "Redman",
+      "email": "stu@freezone.org",
+      "credentials": [
+        {
+          "id": "8e6e3a24-71a2-4c61-a632-ea2ff7806ea4",
+          "type": "password",
+          "createdDate": 1615311955711,
+          "secretData": "{\"value\":\"nnA4/OKo0kStnlv6t+8Lo3Ee6WhtzWsTdwv+ONM7qmplWJ1kSgp18f1gbvWVl2PKE+AtB+QSVt4YQomX4HYT1g==\",\"salt\":\"fmpBI1r8R1u75hDLMUlwBw==\"}",
+          "credentialData": "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\"}"
+        }
+      ],
+      "disableableCredentialTypes": [],
+      "requiredActions": [],
+      "realmRoles": [
+        "offline_access",
+        "uma_authorization",
+        "ROLE_USER",
+        "kibana_read_only",
+        "kibana_okp4_user",
+        "kibanauser",
+        "ROLE_UC_a_tenant_communes"
+      ],
+      "notBefore": 0,
+      "groups": []
+    },
+    {
+      "id": "522620a4-d4f6-424c-8608-48019c4c1f83",
+      "createdTimestamp": 1615311955711,
+      "username": "user5",
+      "enabled": true,
+      "totp": false,
+      "emailVerified": true,
+      "firstName": "Harold",
+      "lastName": "Lauder",
+      "email": "hlauder@freezone.org",
+      "credentials": [
+        {
+          "id": "e7e34b3d-b99d-4dd5-a15c-a41c8485321e",
+          "type": "password",
+          "createdDate": 1615311955711,
+          "secretData": "{\"value\":\"nnA4/OKo0kStnlv6t+8Lo3Ee6WhtzWsTdwv+ONM7qmplWJ1kSgp18f1gbvWVl2PKE+AtB+QSVt4YQomX4HYT1g==\",\"salt\":\"fmpBI1r8R1u75hDLMUlwBw==\"}",
+          "credentialData": "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\"}"
+        }
+      ],
+      "disableableCredentialTypes": [],
+      "requiredActions": [],
+      "realmRoles": [
+        "offline_access",
+        "uma_authorization",
+        "ROLE_USER",
+        "kibana_read_only",
+        "kibana_okp4_user",
+        "kibanauser",
+        "ROLE_UC_a_tenant_communes"
+      ],
+      "notBefore": 0,
+      "groups": []
+    }
+  ]
+}
