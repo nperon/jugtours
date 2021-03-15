@@ -1,19 +1,13 @@
 import React, { Component } from 'react';
 import { ORIGIN_URI_KEY } from './Constants';
-// import { Link, withRouter } from 'react-router-dom';
 
-class DummyComponent extends Component {
+class SidewayComponent extends Component {
 
-    constructor(props) {
-        super(props);
-        console.log('window.location: ', window.location.pathname);
-        localStorage.removeItem(ORIGIN_URI_KEY);
-        localStorage.setItem(ORIGIN_URI_KEY, window.location.pathname);
-    }
-        
     async componentDidMount() {
         const response = await fetch('/api/user', { credentials: 'include' });
         const body = await response.text();
+        console.log('window.location: ', window.location.pathname);
+        sessionStorage.setItem(ORIGIN_URI_KEY, window.location.pathname);
         if (body === '') {
             this.login();
         } else {
@@ -36,4 +30,4 @@ class DummyComponent extends Component {
   }
 }
 
-export default DummyComponent;
+export default SidewayComponent;

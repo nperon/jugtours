@@ -34,12 +34,6 @@ class Home extends Component {
     this.state.csrfToken = cookies.get('XSRF-TOKEN');
     this.login = this.login.bind(this);
     this.logout = this.logout.bind(this);
-    const originUriValue = localStorage.getItem(ORIGIN_URI_KEY);
-    localStorage.removeItem(ORIGIN_URI_KEY);
-    console.log('value read from storage: ', originUriValue);
-    if ( originUriValue ) { 
-      this.props.history.push(originUriValue); 
-    }
   }
 
   async componentDidMount() {
@@ -50,6 +44,16 @@ class Home extends Component {
     } else {
       this.setState({ isAuthenticated: true, user: JSON.parse(body) });
     }
+
+    /** */
+
+    const originUriValue = sessionStorage.getItem(ORIGIN_URI_KEY);
+    sessionStorage.removeItem(ORIGIN_URI_KEY);
+    console.log('value read from storage: ', originUriValue);
+    if ( originUriValue ) { 
+      this.props.history.push(originUriValue); 
+    }
+
   }
 
   login() {
